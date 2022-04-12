@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #ADD09D;
+
+  .copyright {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
