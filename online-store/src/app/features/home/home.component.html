@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="maim-menu">
+    <button mat-fab [ngStyle]="{'background-color': '#ADD09D'}">
+      <mat-icon mat-button [matMenuTriggerFor]="menu">menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Catalogy</button>
+      <button mat-menu-item>Online chat</button>
+      <button mat-menu-item>Cart</button>
+      <button mat-menu-item>Contacts</button>
+    </mat-menu>
+  </div>
+
+  <div class="search-container">
+    <i class="material-icons">search</i>
+    <input class="searcher" type="search" placeholder="Search"/>
+  </div>
+</div>
+
+<div class="content">
+  <div *ngFor="let card of catalog; let i = index">
+    <mat-card class="category-card">
+      <div mat-card-image class="category-image" [ngStyle]="{'background-image': 'url(' + card.imageUrl + ')'}"></div>
+      <mat-card-content>
+        <h2 class="card-title">
+          {{card.title}}
+        </h2>
+        <ul class="card-description" *ngFor="let category of catalog[i].description">
+          <li class="item">
+            <a class="item-link" routerLink="/products-list">{{category}}</a>
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
