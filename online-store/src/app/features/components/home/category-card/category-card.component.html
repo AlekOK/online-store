@@ -1,0 +1,14 @@
+<mat-card class="category-card">
+  <div mat-card-image class="category-image" [ngStyle]="{'background-image': 'url(' + category.imageUrl + ')'}"></div>
+  <mat-card-content>
+    <h2 class="card-title">
+      {{category.title}}
+    </h2>
+    <ul class="card-description" *ngFor="let category of category.description">
+      <li class="item">
+        <a class="item-link" routerLink="/products-list/{{category}}">{{category}}</a>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+

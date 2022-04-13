@@ -1,0 +1,45 @@
+.category-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  border: 1px solid var(--primary-grey);
+
+  .mat-card-image {
+    align-self: center;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .card-description {
+    color: var(--primary-green);
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .price {
+      font-size: 40px;
+      color: var(--primary-orange);
+    }
+
+    .cart-icon {
+      font-size: 40px;
+      padding: 5px 30px;
+    }
+  }
+}
+

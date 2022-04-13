@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="form-container">
+
+  <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+    <h2 class="title">Sign In</h2>
+
+      <div class="field">
+        <label class="form-label">Login</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your login</mat-label>
+          <input matInput formControlName="login" required>
+          <mat-error *ngIf="login.invalid">Not a valid login</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="field">
+        <label class="form-label">Password</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Enter your password</mat-label>
+          <input matInput formControlName="psw" required>
+          <mat-error *ngIf="psw.invalid">Not a valid Password</mat-error>
+        </mat-form-field>
+      </div>
+
+    <button class="form-button"
+            type="submit"
+            [disabled]="loginForm.invalid">Sign In</button>
+    <a class="sign-up"routerLink="/">Sign Up?</a>
+  </form>
+</div>

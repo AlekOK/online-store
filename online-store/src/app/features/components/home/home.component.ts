@@ -7,7 +7,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent implements OnInit {
-  catalog: any = [
+
+  category: any = [
     {title: 'Grocery',
     description: ['cereals', 'flour', 'sugar', 'pasta', 'mixes'],
     imageUrl: './assets/catalog-img/grocery.jpg'},
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
     description: ['cheeses', 'eggs', 'milk', 'yogurt', 'butter'],
     imageUrl: './assets/catalog-img/diary.jpg'},
     {title: 'Beverages',
-    description: ['coffee/tea', 'juice', 'soda'],
+    description: ['coffee', 'tea', 'juice', 'soda'],
     imageUrl: './assets/catalog-img/beverages.jpg'},
     {title: 'Bakery',
     description: ['sandwich loaves', 'dinner rolls', 'tortillas', 'bagels'],
@@ -35,5 +36,4 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

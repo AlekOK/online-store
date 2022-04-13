@@ -1,0 +1,44 @@
+.category-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  box-sizing: border-box;
+  border: 1px solid var(--primary-grey);
+
+  .mat-card-image {
+    align-self: center;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .card-description {
+    list-style: none;
+
+    .item {
+      .item-link {
+        text-decoration: none;
+        color: var(--primary-green);
+        font-family: var(--primary-font);
+        font-size: 20px;
+        line-height: 22px;
+
+        &:hover {
+          color: var(--primary-orange);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

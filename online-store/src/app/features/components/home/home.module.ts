@@ -1,26 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { CategoryCardComponent } from './category-card/category-card.component';
+import { ProductsListModule } from '../products-list/products-list.module';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent, CategoryCardComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MatTabsModule,
-    MatMenuModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    ProductsListModule
   ],
-  exports: [HomeComponent]
+  exports: [HomeComponent, CategoryCardComponent]
 })
 export class HomeModule { }

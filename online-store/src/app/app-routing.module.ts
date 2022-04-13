@@ -12,11 +12,19 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
+        loadChildren: () => import('./features/components/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'admin',
-        loadChildren: () => import('./features/admin/admin.module').then(m => m.AdminModule)
+        loadChildren: () => import('./features/components/admin/admin.module').then(m => m.AdminModule)
+      },
+      {
+        path: 'cart',
+        loadChildren: () => import('./features/components/cart/cart.module').then(m => m.CartModule)
+      },
+      {
+        path: 'products-list/:id',
+        loadChildren: () => import('./features/components/products-list/products-list.module').then(m => m.ProductsListModule)
       }
     ]
   },
