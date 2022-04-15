@@ -6,7 +6,7 @@ import { AdminModule } from './components/admin/admin.module';
 import { FeaturesComponent } from './features.component';
 import { LayoutModule } from '../static/components/layout/layout.module';
 import { CartModule } from './components/cart/cart.module';
-
+import { FeatureService } from './services/feature.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,9 @@ import { CartModule } from './components/cart/cart.module';
     HomeModule,
     AdminModule,
     LayoutModule,
-    CartModule
-  ]
+    CartModule,
+
+  ],
+  providers: [FeatureService]
 })
 export class FeaturesModule { }

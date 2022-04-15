@@ -1,0 +1,53 @@
+.empty-cart {
+  align-self: center;
+  background-image: url(/assets/img/emptycart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 80vh;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.column-total {
+  height: 40px;
+  color: var(--primary-white);
+  font-size: 30px;
+  margin: 10px 10px 10px 75%;
+  text-align: center;
+  background-color: var(--primary-green);
+  padding-top: 5px;
+  border: solid 1px var(--secondary-dark-green);
+}
+
+tr.mat-footer-row {
+  font-weight: bold;
+}
+
+.mat-table-sticky {
+  border-top: 1px solid #e0e0e0;
+}
+
+.title {
+  font-size: 60px;
+  font-family: var(--secondary-font);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.image {
+  height: 150px;
+  margin-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

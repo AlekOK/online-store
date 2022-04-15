@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import { FeatureService } from 'src/app/features/services/feature.service';
 
 @Component({
   selector: 'app-product-card',
@@ -10,9 +11,12 @@ export class ProductCardComponent implements OnInit {
 
   @Input() card: any;
 
-  constructor() { }
+  constructor(private featureService: FeatureService) { }
 
   ngOnInit(): void {
   }
 
+  onPushInCart(card: any): any {
+    this.featureService.PushInCart(card);
+  }
 }

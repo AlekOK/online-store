@@ -2,14 +2,14 @@
   <div mat-card-image class="category-image" [ngStyle]="{'background-image': 'url(' + card.imageUrl + ')'}"></div>
   <mat-card-content>
     <h2 class="card-title">
-      {{card.title}}
+      {{card.title}} {{card.id}}
     </h2>
     <h3 class="card-description">
       {{card.description}}
     </h3>
   </mat-card-content>
   <mat-card-actions class="actions" fxLayout="row" fxLayoutAlign="end end">
-    <div class="price">{{card.price}}$</div>
-    <mat-icon class="cart-icon">shopping_cart</mat-icon>
+    <div class="price">{{card.price  | currency}}</div>
+    <mat-icon class="cart-icon" (click)="onPushInCart(card)">shopping_cart</mat-icon>
   </mat-card-actions>
 </mat-card>
