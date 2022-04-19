@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
-import { FeatureService } from 'src/app/features/services/feature.service';
+import { FeatureService } from 'src/app/core/services/services/feature.service';
 
 @Component({
   selector: 'app-product-card',

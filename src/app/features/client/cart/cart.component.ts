@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { FeatureService } from '../../services/feature.service';
+import { FeatureService } from 'src/app/core/services/services/feature.service';
+
 
 @Component({
   selector: 'app-cart',

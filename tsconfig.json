@@ -23,7 +23,8 @@
       "dom"
     ],
     "paths": {
-      "@static": ["app/static/components/*"]
+      "@client/*": ["src/app/features/client/*"],
+      "@admin/*": ["src/app/features/admin/*"]
     }
   },
   "angularCompilerOptions": {
