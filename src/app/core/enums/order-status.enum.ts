@@ -1,4 +1,6 @@
-export enum UserRole {
-  ADMIN='admin',
-  CLIENT='client'
+export  enum OrderStatus {
+  NEW,
+  IN_PROGRESS,
+  DONE,
+  CANCELED
 }

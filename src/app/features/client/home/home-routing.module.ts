@@ -10,11 +10,7 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('./category-list/category-list.module').then((m) => m.CategoryListModule)
-      },
-      {
-        path: 'products-list/:id',
-        loadChildren: () => import('./products-list/products-list.module').then(m => m.ProductsListModule)
+        import('./products-list/products-list.module').then(m => m.ProductsListModule)
       }
     ]
   }

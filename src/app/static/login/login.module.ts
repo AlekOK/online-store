@@ -17,7 +17,6 @@ const routes: Routes = [
     FormsModule,
     SharedModule,
     ReactiveFormsModule
-  ],
-  exports:[RouterModule],
+  ]
 })
 export class LoginModule { }

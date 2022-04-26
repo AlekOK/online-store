@@ -5,7 +5,7 @@
   text-transform: uppercase;
 }
 
-.wrapper {
+.cards-list {
   height: 100vh;
   display: flex;
   gap: 30px;
@@ -14,4 +14,46 @@
   scrollbar-width: none;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.search-wrapper {
+  min-width: 500px;
+  height: 100px;
+  background-color: var(--primary-orange);
+}
+
+.search-container {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--primary-orange);
+  border-radius: 30px;
+  line-height: 24px;
+  width: 470px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 12px;
+  background-color: var(--primary-white);
+
+  .searcher {
+    width: 100%;
+    min-width: 260px;
+    margin: 0 12px;
+    border: none;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .material-icons {
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
 }

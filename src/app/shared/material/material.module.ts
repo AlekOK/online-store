@@ -23,55 +23,34 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 
+const MATERIAL_MODULES = [
+  MatTableModule,
+  MatSortModule,
+  MatInputModule,
+  MatPaginatorModule,
+  MatButtonToggleModule,
+  MatFormFieldModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatCheckboxModule,
+  MatProgressSpinnerModule,
+  DragDropModule,
+  MatDialogModule,
+  MatSliderModule,
+  MatTreeModule,
+  MatSelectModule,
+  MatRadioModule,
+  MatMenuModule,
+  MatProgressBarModule,
+  MatTabsModule,
+  MatCardModule]
+
 @NgModule({
-  imports: [
-    MatTableModule,
-    MatSortModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatButtonToggleModule,
-    MatFormFieldModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatCheckboxModule,
-    MatProgressSpinnerModule,
-    DragDropModule,
-    MatDialogModule,
-    MatSliderModule,
-    MatTreeModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatMenuModule,
-    MatProgressBarModule,
-    MatTabsModule,
-    MatCardModule
-  ],
-  exports: [
-    MatTableModule,
-    MatSortModule,
-    MatInputModule,
-    MatPaginatorModule,
-    MatButtonToggleModule,
-    MatFormFieldModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatCheckboxModule,
-    MatProgressSpinnerModule,
-    DragDropModule,
-    MatDialogModule,
-    MatSliderModule,
-    MatTreeModule,
-    MatSelectModule,
-    MatRadioModule,
-    MatMenuModule,
-    MatProgressBarModule,
-    MatCardModule
-  ]
+  imports: [...MATERIAL_MODULES],
+  exports: [...MATERIAL_MODULES]
+
 })
 export class MaterialModule {}

@@ -15,7 +15,6 @@ const STATIC_COMPONENTS = [LayoutComponent, FooterComponent, HeaderComponent]
     CommonModule,
     LayoutRoutingModule,
     SharedModule
-  ],
-  exports: [LayoutRoutingModule]
+  ]
 })
 export class LayoutModule { }
