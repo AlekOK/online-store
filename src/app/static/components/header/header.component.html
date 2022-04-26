@@ -1,0 +1,27 @@
+<mat-toolbar class="toolbar">
+  <div class="maim-menu">
+    <button mat-fab [ngStyle]="{'background-color': '#ADD09D'}">
+      <mat-icon mat-button [matMenuTriggerFor]="menu">menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item><mat-icon>view_list</mat-icon>Catalogy</button>
+      <button mat-menu-item><mat-icon> chat</mat-icon>Online chat</button>
+      <button mat-menu-item> <mat-icon class="cart-icon">shopping_cart</mat-icon>Cart</button>
+      <button mat-menu-item><mat-icon>info</mat-icon>Contacts</button>
+    </mat-menu>
+  </div>
+  <a routerLink="/" class="brand-header">
+    <img class="logo" src="/assets/img/logo.png" alt="logo" />
+  </a>
+  <h2 class="header-title">Komora</h2>
+  <h3 class="slogan">Get set and shop!</h3>
+
+  <a routerLink="../login" class="sing-in">
+    <img class="avatarka" src="/assets/img/avatarka.jpg" alt="logo" />
+    <p class="sign">Log in</p>
+  </a>
+
+  <a routerLink="/cart" class="cart">
+    <img class="cart-icon" src="/assets/img/cart-icon.jpg" alt="cart" />
+  </a>
+</mat-toolbar>

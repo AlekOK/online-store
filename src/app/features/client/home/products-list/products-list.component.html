@@ -1,0 +1,12 @@
+<h4 class="title">{{title}}</h4>
+<div class="wrapper">
+  <div class="search-wrapper">
+    <div class="search-container">
+      <i class="material-icons">search</i>
+      <input class="searcher" type="search" placeholder="Search"/>
+    </div>
+  </div>
+<div class="cards-list">
+  <app-product-card [card]="card" *ngFor="let card of productList"></app-product-card>
+</div>
+</div>
